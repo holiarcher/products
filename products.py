@@ -4,13 +4,13 @@ with open('product.csv','r', encoding = 'utf-8') as f:
 	for line in f:
 		if '商品,价格' in line:
 			continue
-			
+
 		s = line.strip().split(',')
 		products.append(s)
 		print(s)
 
 products = (products)
-
+#使用者输入价格
 while True:
 	name = input('请输入商品名称:')
 	if name == 'q':
