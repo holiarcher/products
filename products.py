@@ -4,7 +4,7 @@ fil = input('请输入挡案名称:')
 
 products = []
 if os.path.isfile(fil):
-	print('yes, there is')
+	print('目前已有挡案')
 	with open(fil,'r', encoding = 'utf-8') as f:
 		for line in f:
 			if '商品,价格' in line:
@@ -14,7 +14,7 @@ if os.path.isfile(fil):
 			products.append(s)
 	print(products)
 else:
-	print('no, there is not')
+	print('已建立新档案')
 
 
 
